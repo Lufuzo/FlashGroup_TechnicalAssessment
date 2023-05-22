@@ -1,0 +1,35 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    color: #0c0c0c;
+    font-family: Gilroy;
+    font-size: 16px;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+    padding: 0;
+    -webkit-text-stroke: 1px transparent;
+}
+.container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1440px;
+    padding: 0 16px;
+    position: relative;
+    z-index: 5;
+}
+background {
+    color: #0c0c0c;
+}
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
