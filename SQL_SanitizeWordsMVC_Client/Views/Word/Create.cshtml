@@ -2,9 +2,11 @@
 
 @{
     ViewData["Title"] = "Create";
+    var std = ViewData["message"];
 }
 
 <h1>Create</h1>
+<h2>@ViewData["std"]</h2>
 
 <h4>Word</h4>
 <hr />
@@ -12,11 +14,13 @@
     <div class="col-md-4">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+         
             @*<div class="form-group">
                 <label asp-for="id" class="control-label"></label>
                 <input asp-for="id" class="form-control" />
                 <span asp-validation-for="id" class="text-danger"></span>
             </div>*@
+           
             <div class="form-group">
                 <label asp-for="value" class="control-label"></label>
                 <input asp-for="value" class="form-control" />
