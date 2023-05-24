@@ -43,14 +43,15 @@ namespace SQL_SanitizeWordsMVC_Client.Controllers
 
             var checkWord =  GetWords();
 
-            var result = checkWord.Where(x => x.FileValues.Any(y => y.Equals(word.value))).ToList();
+
+            var result = checkWord.Where(x => x.FileValues.Any(y => y.Contains(word.value))).ToList();
             if (result.Count == 0)
             {
                 apiGateway.CreateWord(word);
             }
             else
             {
-                string mess = "Dangerous input!!!!";
+                string mess = "Dangerous input!!"+" "+"Sensitive no inserted in the database !!";
                 ViewData["message"] = mess;
             }
 
