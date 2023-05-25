@@ -51,8 +51,9 @@ namespace SQL_SanitizeWordsMVC_Client.Controllers
             }
             else
             {
-                string mess = "Dangerous input!!"+" "+"Sensitive no inserted in the database !!";
-                ViewData["message"] = mess;
+               
+                TempData["ErroMessage"] = "Dangerous input Sensitive no inserted in the database !!";
+           
             }
 
             

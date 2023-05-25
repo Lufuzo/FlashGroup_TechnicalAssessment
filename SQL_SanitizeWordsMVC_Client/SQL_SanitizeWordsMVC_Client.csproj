@@ -7,6 +7,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="alertify" Version="0.3.11" />
+    <PackageReference Include="bootstrap" Version="5.2.3" />
+    <PackageReference Include="jQuery" Version="3.7.0" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.13" />
     <PackageReference Include="System.IO" Version="4.3.0" />
   </ItemGroup>

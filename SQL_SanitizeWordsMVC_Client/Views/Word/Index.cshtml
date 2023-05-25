@@ -39,3 +39,13 @@
 }
     </tbody>
 </table>
+
+ <script>
+             
+      $(function () {
+        var erroMess = '@TempData["ErroMessage"]'
+        if (erroMess != '')
+                alertify.error(erroMess);
+        });
+
+    </script>
